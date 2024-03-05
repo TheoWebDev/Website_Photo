@@ -1,0 +1,32 @@
+.choose-section{
+    
+}
+
+.choose-container{
+
+}
+
+.text-container__left{
+
+}
+
+.titleNewImg {
+    font-size: 2.5rem;
+    margin: 5rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+  }
+
+.imgShow{
+
+}
+
+.classImgShow{
+
+}
+
+@media (max-width: 767px) {
+    .titleNewImg{
+        margin: 5rem 0;
+    }
+}

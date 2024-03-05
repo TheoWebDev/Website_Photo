@@ -1,0 +1,72 @@
+.empty{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.empty h1{
+    color: #395967;
+}
+
+.btnToGallery {
+    background-color: #395967;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.btnToGallery:hover{
+    cursor: pointer;
+    background-color: #C4C4C4;
+    transition: all 200ms ease-in-out;
+  }
+
+.redirectMobile{
+    text-align: center;
+}
+
+@media (min-width: 767px) {
+    .redirectMobile{
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .btnToGallery{
+        background-color: #395967;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: none;
+        color: whitesmoke;
+        text-decoration: none;
+        padding-inline-start: 18%;
+        padding-inline-end: 18%;
+        padding-block-start: 4%;
+        padding-block-end: 4%;
+        font-size: larger;
+        font-weight: 600;
+        transition-duration: 500ms;
+        border-radius: 25px;
+    }
+}
+
+.titleInsideAlbums{
+    margin: 0 auto;
+    text-align: center;
+    color: #010103;
+}
+
+.titleInsideAlbums h2 {
+    font-size: 3rem;
+    margin: 0rem 2rem 3rem 2rem;
+    font-weight: normal;
+  }
+  
+.titleInsideAlbums h3 {
+    text-align: left;
+    font-weight: 100;
+    font-size: 2rem;
+    margin: 0rem 2rem 3rem 2rem;
+}

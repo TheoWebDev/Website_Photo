@@ -1,0 +1,31 @@
+.empty{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.container-text img{
+    filter: brightness(0.6);
+}
+
+.empty h1{
+    color: #395967;
+}
+
+.plan-container__title h2 {
+    font-size: 3rem;
+    margin: 0rem 2rem 3rem 2rem!important;
+    font-weight: normal;
+}
+
+@media (max-width: 767px) {
+    .plan-container__title h2{
+      margin: 0;
+    }
+    .hiddenTxt{
+        display: none;
+    }
+    .plan-container__title h2{
+        text-transform: capitalize;
+    }
+  }

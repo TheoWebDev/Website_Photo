@@ -1,0 +1,20 @@
+.hero-content__text h1 {
+    font-size: 75px;
+    font-weight: normal;
+    color: whitesmoke;
+    margin-bottom: 5rem;
+    letter-spacing: 2px;
+    box-shadow:
+    0px 0px 13.4px rgba(0, 0, 0, 0.061),
+    0px 0px 44.9px rgba(0, 0, 0, 0.089),
+    0px 0px 201px rgba(0, 0, 0, 0.15)
+  ;
+}
+
+/* Media queries */
+
+@media (max-width: 767px) {
+    .hero-content__text h1{
+        box-shadow: none;
+    }
+}

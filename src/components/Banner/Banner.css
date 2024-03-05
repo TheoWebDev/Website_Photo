@@ -1,0 +1,56 @@
+.imgFooter{
+    width: 100%;
+    background-image: repeating-linear-gradient(360deg, var(--main-dark-blue), rgba(7, 93, 119, 0.3)), url('../../images/logo/bannerToGallery.jpg');
+    background-position: center;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.linkGaleries{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    text-decoration: none;
+    padding-inline-start: 4%;
+    padding-inline-end: 4%;
+    padding-block-start: 1%;
+    padding-block-end: 1%;
+    font-size: large;
+    letter-spacing: 2px;
+    transition-duration: 500ms;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+}
+  
+.linkGaleries:hover{
+    color: #484848!important;
+    text-decoration: none;
+    background-color: var(--main-whitesmoke-text);
+}
+
+@media (max-width: 767px) {
+    .imgFooter{
+        background-image: none;
+    }
+    .linkGaleries{
+        background-color: #395967;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: none;
+        color: whitesmoke;
+        text-decoration: none;
+        padding-inline-start: 18%;
+        padding-inline-end: 18%;
+        padding-block-start: 4%;
+        padding-block-end: 4%;
+        font-size: larger;
+        font-weight: 600;
+        transition-duration: 500ms;
+        border-radius: 25px;
+    }
+}

@@ -1,0 +1,75 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  max-width: 500px;
+  width: 100%;
+}
+
+label {
+  visibility: hidden;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.submitContact {
+  background-color: #395967;
+  color: white;
+  border: none;
+  margin-top: 2rem;
+  padding: 10px 15px;
+  font-size: large;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.submitContact:hover{
+  cursor: pointer;
+  background-color: #C4C4C4;
+  transition: all 200ms ease-in-out;
+}
+
+.text-error {
+  text-align: left;
+  color: #bf1650;
+  font-size: small;
+}
+
+.text-error::before {
+  display: inline;
+  content: "⚠ ";
+}
+
+@media (max-width: 767px) {
+  form {
+    max-width: 75%;
+    margin: 3rem 0 3rem 0;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 26px;
+  }
+  .submitContact{
+    background-color: #395967;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    color: whitesmoke;
+    text-decoration: none;
+    padding-inline-start: 28%;
+    padding-inline-end: 28%;
+    padding-block-start: 4%;
+    padding-block-end: 4%;
+    font-size: larger;
+    transition-duration: 500ms;
+    border-radius: 25px;
+  }
+}

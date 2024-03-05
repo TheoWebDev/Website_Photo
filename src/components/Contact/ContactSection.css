@@ -26,7 +26,7 @@ input, textarea {
   margin-top: 2rem;
   padding: 10px 15px;
   font-size: large;
-  font-weight: 100;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 
@@ -69,6 +69,7 @@ input, textarea {
     padding-block-start: 4%;
     padding-block-end: 4%;
     font-size: larger;
+    font-weight: 600;
     transition-duration: 500ms;
     border-radius: 25px;
   }

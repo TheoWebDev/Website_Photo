@@ -20,7 +20,7 @@ function AboutSection() {
             <div className="textabout">
               <p>Je pratique la photographie depuis une dizaine d'années et j'aime voyager pour photographier ce que notre planète a de mieux à offrir, ses paysages naturels comme urbains.</p>
               <p>Ce que j'apprécie le plus, c'est de capturer le moment où les plus belles lumières se dévoilent, lors des levers et couchers de soleil.</p>
-              <p>Pour toutes demandes d'informations ou si vous souhaitez acheter une photographie, vous pouvez me contacter via la <Link className="helloIci" to='/contact'>page Contact</Link>.</p>
+              <p>Pour toutes demandes d'informations ou si vous souhaitez acheter une photographie, vous pouvez me contacter via la page <Link className="helloIci" to='/contact'>Contact</Link>.</p>
               <p>N'hésitez pas à aller jeter un œil à la galerie.</p>
               <div className='divLink'>
                 <Link className='btnVisit' to='/gallery'>Visiter la galerie</Link>

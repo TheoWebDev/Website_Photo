@@ -312,7 +312,7 @@ body {
   background-color: #f8f8f8;
   position: relative;
   background-image: repeating-linear-gradient(360deg, var(--main-dark-blue), rgba(7, 93, 119, 0.3)), url('../images/img/Miami/3E5A8901-HDR-3.jpg');
-	background-position: top;
+	background-position: center;
 }
 
 .hero-content {

@@ -19,7 +19,7 @@ function Footer() {
         </div>
       </div>
       <div className="questionForSite">
-        <h5>Une suggestion pour le site ? N'hésitez pas à <Link className="helloIci" to='/contact'>me contacter</Link>.</h5>
+        <h5>Une question sur le site ? N'hésitez pas à <Link className="helloIci" to='/contact'>me contacter</Link>.</h5>
       </div>
     </div>
 

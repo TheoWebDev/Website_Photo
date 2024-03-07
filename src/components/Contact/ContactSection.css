@@ -30,11 +30,11 @@ input, textarea {
   letter-spacing: 1px;
 }
 
-.submitContact:hover{
+/* .submitContact:hover{
   cursor: pointer;
   background-color: #C4C4C4;
   transition: all 200ms ease-in-out;
-}
+} */
 
 .text-error {
   text-align: left;
@@ -78,10 +78,20 @@ input, textarea {
   border-left-color: transparent;
   width: 14px;
   height: 14px;
-  animation: spin89345 1s linear infinite;
+  animation: spinnerLoad 1s linear infinite;
 }
 
 .centerDiv{
   display: grid;
   place-items: center;
+}
+
+@keyframes spinnerLoad {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

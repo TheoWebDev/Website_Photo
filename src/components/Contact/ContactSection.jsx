@@ -79,7 +79,7 @@ function ContactSection() {
                     {errors?.message?.type === "maxLength" && (
                         <p className="text-error">Limite des caractères autorisés atteinte.</p>
                     )}
-                    <button className='submitContact' type="submit">{!loading ? <div className='centerDiv'><div className='loader'></div></div> : 'Envoyer'}</button>
+                    <button className='submitContact' type="submit">{loading ? <div className='centerDiv'><div className='loader'></div></div> : 'Envoyer'}</button>
             </form>
             </div>
       ) : errorSubmit ? (

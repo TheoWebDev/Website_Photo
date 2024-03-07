@@ -6,27 +6,15 @@
 }
 
 .loader {
-  border: 4px solid #395967;
-  border-left-color: transparent;
   border-radius: 50%;
-}
-
-.loader {
   border: 4px solid #395967;
   border-left-color: transparent;
   width: 36px;
   height: 36px;
+  animation: spinnerLoad 1s linear infinite;
 }
 
-.loader {
-  border: 4px solid #395967;
-  border-left-color: transparent;
-  width: 36px;
-  height: 36px;
-  animation: spin89345 1s linear infinite;
-}
-
-@keyframes spin89345 {
+@keyframes spinnerLoad {
   0% {
     transform: rotate(0deg);
   }

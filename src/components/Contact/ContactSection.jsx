@@ -3,7 +3,6 @@ import emailjs from 'emailjs-com';
 import { useState, useRef } from 'react';
 import { IconCheck, IconExclamationCircle } from '@tabler/icons-react';
 import { useForm } from "react-hook-form";
-import Loading from '../Loading/Loading';
 
 function ContactSection() {
 
@@ -36,6 +35,7 @@ function ContactSection() {
                <form ref={form} onSubmit={handleSubmit(sendEmail)}>
                  <label>Nom</label>
                  <input
+                 type='text'
                 placeholder='Votre nom'
                   {...register("user_name", {
                     required: true,
@@ -52,6 +52,7 @@ function ContactSection() {
                     )}
                 <label>Adresse email</label>
                 <input
+                type='email'
                 placeholder='Votre email'
                   {...register("user_email", {
                     required: true,
@@ -78,11 +79,7 @@ function ContactSection() {
                     {errors?.message?.type === "maxLength" && (
                         <p className="text-error">Limite des caractères autorisés atteinte.</p>
                     )}
-                    {loading ? (
-                      <Loading />
-                    ) : (
-                      <button className='submitContact' type="submit">Envoyer</button>
-                    )}
+                    <button className='submitContact' type="submit">{loading ? <div className='centerDiv'><div className='loader'></div></div> : 'Envoyer'}</button>
             </form>
             </div>
       ) : errorSubmit ? (

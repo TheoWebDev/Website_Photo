@@ -64,13 +64,24 @@ input, textarea {
     border: none;
     color: whitesmoke;
     text-decoration: none;
-    padding-inline-start: 28%;
-    padding-inline-end: 28%;
-    padding-block-start: 4%;
-    padding-block-end: 4%;
     font-size: larger;
     font-weight: 600;
     transition-duration: 500ms;
     border-radius: 25px;
+    width: 250px;
   }
+}
+
+.loader {
+  border-radius: 50%;
+  border: 2px solid white;
+  border-left-color: transparent;
+  width: 14px;
+  height: 14px;
+  animation: spin89345 1s linear infinite;
+}
+
+.centerDiv{
+  display: grid;
+  place-items: center;
 }

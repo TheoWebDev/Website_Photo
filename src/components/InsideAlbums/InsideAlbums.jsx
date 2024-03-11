@@ -26,7 +26,7 @@ function InsideAlbums() {
 
   const images = dataImages
         .filter(titi => titi.album_id === albumParams._id)
-        .sort((a, b) => a.image.localeCompare(b.image))
+        .sort((a, b) => a.image - b.image)
   ;
 
   const titleLeMans = '24h du Mans 2023';

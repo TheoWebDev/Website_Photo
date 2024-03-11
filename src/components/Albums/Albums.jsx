@@ -12,7 +12,7 @@ function Albums() {
   const titleLeMans = '24h du Mans';
   const [isLoading, setIsLoading] = useState(true);
 
-  const sortAlbums = dataAlbums.sort((a, b) => a.name.localeCompare(b.name));
+  const sortAlbums = dataAlbums.sort((a, b) => a.name - b.name);
 
   console.log(sortAlbums);
 

@@ -7,6 +7,7 @@ import Home from "./Pages/Home";
 import Footer from "./components/Footer/Footer";
 import Gallery from "./Pages/Gallery";
 import Loading from "./components/Loading/Loading";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 // Style
 import "../src/dist/styles.css";
 // Lazy components
@@ -20,6 +21,7 @@ function App() {
     <>
       <Navbar />
       <Suspense fallback={<Loading />}>
+      <ScrollToTop />
         <Routes>
           <Route index path="/" element={<Home />} />
           <Route path="gallery/*" element={<Gallery />} />

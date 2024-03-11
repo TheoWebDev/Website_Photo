@@ -1,11 +1,11 @@
-import LeMansScreen from '../images/albums/24h-Screen.jpg';
-import BelgiumScreen from '../images/albums/Belgium-Screen.jpg';
-import JordanScreen from '../images/albums/Jordan-Screen.jpg';
-import MiamiScreen from '../images/albums/Miami-Screen.jpg';
-import NycScreen from '../images/albums/NYC-Screen.jpg';
-import FranceScreen from '../images/albums/Normandy-Screen.jpg';
-import QuebecScreen from '../images/albums/Quebec-Screen.jpg';
-import ScandiScreen from '../images/albums/Scandi-Screen.jpg';
+import LeMansScreen from '../images/albums/24h-Screen.webp';
+import BelgiumScreen from '../images/albums/Belgium-Screen.webp';
+import JordanScreen from '../images/albums/Jordan-Screen.webp';
+import MiamiScreen from '../images/albums/Miami-Screen.webp';
+import NycScreen from '../images/albums/NYC-Screen.webp';
+import FranceScreen from '../images/albums/Normandy-Screen.webp';
+import QuebecScreen from '../images/albums/Quebec-Screen.webp';
+import ScandiScreen from '../images/albums/Scandi-Screen.webp';
 
 export const dataAlbums = [
   {
@@ -34,7 +34,7 @@ export const dataAlbums = [
     image: MiamiScreen,
     name: 'Miami',
     location: 'États-Unis',
-    description: 'Ville emblématique de la Floride par son atmosphère tropicale. Retrouvez les quartiers les plus populaires de cette ville en passant par Wynwood et Ocean Drive.',
+    description: 'Ville emblématique de la Floride, retrouvez les quartiers les plus populaires de Miami, de Wynwood à Ocean Drive.',
   },
   {
     _id: 5,
@@ -55,7 +55,7 @@ export const dataAlbums = [
     image: QuebecScreen,
     name: 'Canada',
     location: 'Canada',
-    description: 'Dans cet album, retrouvez la province de Québec visitée pendant l\'été indien.',
+    description: 'Dans cet album, retrouvez la province de Québec durant l\'été indien.',
   },
   {
     _id: 8,

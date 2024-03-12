@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { dataImages } from '../../data/images';
 import 'lightbox.js-react/dist/index.css';
 import { SlideshowLightbox } from 'lightbox.js-react';
-import './NewImages.css';
+import './HomeNewImages.css';
 
 import Aos from "aos";
 import 'aos/dist/aos.css';
@@ -28,7 +28,7 @@ function HomeNewImages() {
   return (
     <>
       <section className="choose-section">
-          <div className="choose-container">
+          <div className="newImgContainer">
               <div className="text-container__left">
                 <h4 className='titleNewImg'>Nouvelles photographies</h4>
               </div>

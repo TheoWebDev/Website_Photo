@@ -1,6 +1,6 @@
-.imgFooter{
+.bannerImg{
     width: 100%;
-    background-image: repeating-linear-gradient(360deg, var(--main-dark-blue), rgba(7, 93, 119, 0.3)), url('../../images/logo/bannerToGallery.jpg');
+    background-image: repeating-linear-gradient(360deg, var(--main-dark-blue), rgba(7, 93, 119, 0.3)), url('../../images/logo/bannerToGallery.webp');
     background-position: center;
     height: 30vh;
     display: flex;
@@ -34,11 +34,12 @@
 }
 
 @media (max-width: 767px) {
-    .imgFooter{
+    .bannerImg{
         background-image: none;
+        height: 10vh!important;
     }
     .linkGaleries{
-        background-color: #395967;
+        background-color: var(--main-blue-button);
         text-transform: uppercase;
         letter-spacing: 1px;
         border: none;

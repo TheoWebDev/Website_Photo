@@ -20,7 +20,7 @@ input, textarea {
 }
 
 .submitContact {
-  background-color: #395967;
+  background-color: var(--main-blue-button);
   color: white;
   border: none;
   margin-top: 2rem;
@@ -56,15 +56,13 @@ input, textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 26px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    color: #ccc;
+    border: 1px solid #161616;
   }
   input::placeholder, textarea::placeholder{
-    color: #ccc;
+    color: #161616;
   }
   .submitContact{
-    background-color: #395967;
+    background-color: var(--main-blue-button);
     text-transform: uppercase;
     letter-spacing: 1px;
     border: none;

@@ -1,0 +1,34 @@
+.newImgContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 163rem !important;
+    margin: 0 auto !important;
+    padding: 0 2.5rem !important;
+}
+
+.titleNewImg {
+    font-size: 2.5rem;
+    margin: 5rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.imgShow{
+    column-count: 2;
+}
+
+.classImgShow{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .titleNewImg{
+        margin: 5rem 0;
+    }
+    .imgShow{
+        display: grid;
+        gap: 5rem;
+    }
+}

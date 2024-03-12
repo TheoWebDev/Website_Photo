@@ -4,7 +4,7 @@ import './Banner.css';
 function Banner() {
   return (
     <>
-      <div className="imgFooter">
+      <div className="bannerImg">
         <Link className="linkGaleries" to='/gallery'>Accéder à la galerie</Link>
       </div>
     </>

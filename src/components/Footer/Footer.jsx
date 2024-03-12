@@ -8,7 +8,7 @@ function Footer() {
   <footer>
     <div className="containerFooter">
       <div className="footerc">
-        <div className="nameCopy">
+        <div className="copyrightText">
           <h2>&copy; 2024 Théophile Demarle<span className="sepration">&nbsp;|&nbsp;</span></h2>
           <h2>Tous droits réservés</h2>
         </div>
@@ -19,7 +19,7 @@ function Footer() {
         </div>
       </div>
       <div className="questionForSite">
-        <h5>Une question sur le site ? N'hésitez pas à <Link className="helloIci" to='/contact'>me contacter</Link>.</h5>
+        <h5>Une question sur le site ? N'hésitez pas à <Link className="linkToContactPage" to='/contact'>me contacter</Link>.</h5>
       </div>
     </div>
 

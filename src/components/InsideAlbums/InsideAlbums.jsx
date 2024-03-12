@@ -12,11 +12,10 @@ import 'aos/dist/aos.css';
 Aos.init();
 
 function InsideAlbums() {
-
   const location = useLocation();
   const albumParams = location.state;
-
   const [isLoading, setIsLoading] = useState(true);
+  const titleLeMans = '24h du Mans 2023';
 
   useEffect(() => {
     setTimeout(() => {
@@ -24,12 +23,7 @@ function InsideAlbums() {
     }, 0);
   }, []);
 
-  const images = dataImages
-        .filter(titi => titi.album_id === albumParams._id)
-        .sort((a, b) => a.image - b.image)
-  ;
-
-  const titleLeMans = '24h du Mans 2023';
+  const images = dataImages.filter(titi => titi.album_id === albumParams._id).sort((a, b) => a.image.localeCompare(b.image));
 
   return (
     <>
@@ -38,7 +32,6 @@ function InsideAlbums() {
           <h2>{albumParams.name === '24hduMans' ? titleLeMans : albumParams.name}</h2>
           <h3>{albumParams.description}</h3>
         </div>
-
         {isLoading ? (
           <Loading />
           ) : (
@@ -52,16 +45,15 @@ function InsideAlbums() {
                 }
               </SlideshowLightbox>
               ) : (
-                <div className="empty">
+                <div className="emptyData">
                   <h1>Cet album ne contient pas de photographies pour le moment.</h1>
                 </div>
               )
             }
-            {/* <Link to="/gallery">Galeries</Link> */}
             <div className="redirectMobile">
-            <Link to ='/gallery'>
-              <button className='btnToGallery'>retour à la galerie</button>
-            </Link>
+              <Link to ='/gallery'>
+                <button className='btnToGallery'>retour à la galerie</button>
+              </Link>
             </div>
             </>
           )

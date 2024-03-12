@@ -1,15 +1,10 @@
-.empty{
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-}
-
-.empty h1{
-    color: #395967;
+/* Default class on librairy */
+._1tmVU{
+    display: none;
 }
 
 .btnToGallery {
-    background-color: #395967;
+    background-color: var(--main-blue-button);
     color: white;
     border: none;
     padding: 10px 15px;
@@ -25,31 +20,6 @@
 
 .redirectMobile{
     text-align: center;
-}
-
-@media (min-width: 767px) {
-    .redirectMobile{
-        display: none;
-    }
-}
-
-@media (max-width: 767px) {
-    .btnToGallery{
-        background-color: #395967;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        border: none;
-        color: whitesmoke;
-        text-decoration: none;
-        padding-inline-start: 18%;
-        padding-inline-end: 18%;
-        padding-block-start: 4%;
-        padding-block-end: 4%;
-        font-size: larger;
-        font-weight: 600;
-        transition-duration: 500ms;
-        border-radius: 25px;
-    }
 }
 
 .titleInsideAlbums{
@@ -69,4 +39,45 @@
     font-weight: 100;
     font-size: 2rem;
     margin: 0rem 2rem 3rem 2rem;
+}
+
+.image-container{
+    columns: 3 250px;
+    gap: 5rem;
+    margin: 5rem;
+}
+  
+.image-container img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0rem 0rem 5rem 0rem;
+}
+
+@media (max-width: 767px) {
+    .btnToGallery{
+        background-color: var(--main-blue-button);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: none;
+        color: whitesmoke;
+        text-decoration: none;
+        padding-inline-start: 18%;
+        padding-inline-end: 18%;
+        padding-block-start: 4%;
+        padding-block-end: 4%;
+        font-size: larger;
+        font-weight: 600;
+        transition-duration: 500ms;
+        border-radius: 25px;
+    }
+    .image-container{
+        margin: 2rem!important;
+    }
+}
+
+@media (min-width: 767px) {
+    .redirectMobile{
+        display: none;
+    }
 }

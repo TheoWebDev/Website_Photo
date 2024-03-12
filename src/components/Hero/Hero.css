@@ -1,14 +1,40 @@
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f8f8;
+    position: relative;
+    background-image: repeating-linear-gradient(360deg, var(--main-dark-blue), rgba(7, 93, 119, 0.3)), url('../../images/img/Scan/DJI_0143-2.jpg');
+    background-position: center;
+}
+
+.hero-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-content__text {
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .hero-content__text h1 {
     font-size: 75px;
     font-weight: normal;
     color: whitesmoke;
     margin-bottom: 5rem;
     letter-spacing: 2px;
-    box-shadow:
-    0px 0px 13.4px rgba(0, 0, 0, 0.061),
-    0px 0px 44.9px rgba(0, 0, 0, 0.089),
-    0px 0px 201px rgba(0, 0, 0, 0.15)
-  ;
+    box-shadow: 0px 0px 13.4px rgba(0, 0, 0, 0.061), 0px 0px 44.9px rgba(0, 0, 0, 0.089), 0px 0px 201px rgba(0, 0, 0, 0.15);
+}
+
+.hero-content__text h2 {
+    font-size: 25px;
+    font-weight: normal;
+    color: whitesmoke;
+    letter-spacing: 5px;
 }
 
 /* Media queries */
@@ -16,5 +42,42 @@
 @media (max-width: 767px) {
     .hero-content__text h1{
         box-shadow: none;
+        font-size: 50px!important;
     }
+    .hero-section{
+        background-position: top;
+    }
+    .show-scroll{
+        display: none!important;
+    }
+}
+
+.scroll-up {
+    position: fixed;
+    font-size: 2.5rem;
+    color: white;
+    background-color: #161616;
+    border: 2px solid whitesmoke;
+    border-radius: 25px;
+    width: 2rem;
+    height: 2rem;
+    bottom: 5rem;
+    right: 5rem;
+    z-index: 20;
+    display: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.scroll-up:hover{
+    transition: 0.3s ease-in-out;
+    background-color: #17A2B8;
+    border: 2px solid #17A2B8;
+}
+
+.show-scroll {
+    display: flex;
 }
